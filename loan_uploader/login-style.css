@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh; /* full screen */
+}
+
+/* Left panel */
+.left-panel {
+    flex: 1;
+    background: url('bg1.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Right panel */
+.right-panel {
+    flex: 1;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+}
+
+.username {
+   width: 100%;
+  display:block;
+  padding: 0.875rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  outline: none;
+  transition: ease 0.25s;
+}
+
+.username:focus {
+  box-shadow: 4px 5px 0 black;
+}
+
+.password {
+  width: 100%;
+  display:block;
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  outline: none;
+  transition: ease 0.25s;
+  margin-bottom: 1rem;
+}
+
+.password:focus {
+  box-shadow: 4px 5px 0 black;
+}
+
+
+.btn-login{
+    padding: 0.875rem;
+    width: 300px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    cursor: pointer;
+    transition: ease 0.25s;
+   background-color:#b9d7d2;
+   display: block;
+   margin: 0 auto;
+
+  
+  
+}
+
+.btn-login:hover {
+    background-color: #4baf9b;
+    
+}
+
+.notmember {
+    color: black;
+    text-align:center;
+    margin-top: 1rem;
+}
+
+#signup {
+    color: blue;
+    text-decoration: none;
+    left: 10px; 
+}
+
+.login-form{
+    background-color: white;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+
+.rememberme {
+    color:black;
+}
+
+.form-options {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#forgotpassword {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* --- Custom checkbox design --- */
+.rememberme {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hide default checkbox */
+.rememberme input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    margin-right: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* When checked */
+.rememberme input[type="checkbox"]:checked {
+    background-color: teal;
+    border-color: teal;
+}
+
+/* Add checkmark */
+.rememberme input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.form-header {
+  display: flex;
+  align-items: center;   
+  justify-content: center; 
+  gap: 0.8rem;          
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+  margin: 0;          
+  line-height: 1;       
+}
