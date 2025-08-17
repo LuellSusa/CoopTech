@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoopTech Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eaeaea;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      height: 100vh;
+      background-color: #b9d9d5;
+      padding-top: 20px;
+      float: left;
+    }
+
+    /* Sidebar links styled like buttons */
+    .sidebar a {
+      display: block;
+      width: 80%;
+      margin: 15px auto;
+      padding: 12px;
+      background-color: #fff;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      text-decoration: none; /* 🔹 removes underline */
+      text-align: center;
+    }
+
+    .sidebar a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Topbar */
+    .topbar {
+      background-color: #006d73;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topbar .icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .topbar img {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+    }
+
+    /* Content Area */
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+      background-color: #006d73;
+      height: calc(100vh - 60px);
+      border-top: 2px solid black; /* 🔹 Black line above cards */
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      width: 300px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 120px;
+      height: auto;
+    }
+
+    .card p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .card a, .card button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #e0ecec;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .card a:hover, .card button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <span>Welcome, Member!</span>
+    <div class="icons">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Messages">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/appointment-reminders.png" alt="Notifications">
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="">Dashboard</a>
+    <a href="">View Loan</a>
+    <a href="">Message(s)</a>
+    <a href="">Transactions</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="cards">
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/96/money-bag.png" alt="Loan">
+        <p>Experience instant loan approval with CoopTech!</p>
+        <button>Apply now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/loan.png" alt="Loan History">
+        <p>View loan history</p>
+        <a href="#">View History</a>
+      </div>
+
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/training.png" alt="Learn">
+        <p>Click here to learn how to use the app!</p>
+        <a href="#">Learn to loan</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
