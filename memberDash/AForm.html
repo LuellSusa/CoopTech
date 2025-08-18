@@ -1,100 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Application Form</title>
-  <style>
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      background-color: #0e6b72;
-      margin: 0;
-      padding: 0;
-    }
-
-    .form-container {
-      background: #f8f8f8;
-      width: 700px;
-      margin: 50px auto;
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 22px;
-    }
-
-    .form-group {
-      display: flex;
-      margin-bottom: 15px;
-      gap: 15px;
-    }
-
-    .form-group input, .form-group select {
-      flex: 1;
-      padding: 8px;
-      border: 1px solid #444;
-      border-radius: 5px;
-    }
-
-    .attachments {
-      background: #fff;
-      border-radius: 10px;
-      padding: 15px;
-      margin-top: 20px;
-      text-align: left;
-    }
-
-    .attachments h3 {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
-    .attachments button {
-      background: #ddd;
-      border: none;
-      padding: 10px 15px;
-      margin-right: 5px;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    .form-actions {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      gap: 20px;
-    }
-
-    .submit-btn {
-      background: #28a745;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .cancel-btn {
-      background: #dc3545;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .submit-btn:hover {
-      background: #218838;
-    }
-
-    .cancel-btn:hover {
-      background: #c82333;
-    }
-  </style>
+  <link rel="stylesheet" href="AFormstyle.css">
 </head>
 <body>
   <div class="form-container">
@@ -139,23 +47,6 @@
     </div>
   </div>
 
-  <script>
-    document.getElementById("amount").addEventListener("change", function() {
-      let amount = this.value;
-      let computation = document.getElementById("computation");
-
-      if (amount === "3000") {
-        computation.value = "3 months";
-      } else if (amount === "6000") {
-        computation.value = "4 months";
-      } else if (amount === "10000") {
-        computation.value = "6 months";
-      } else if (amount === "20000") {
-        computation.value = "9 months";
-      } else {
-        computation.value = "";
-      }
-    });
-  </script>
+  <script src="AForm.js"></script>
 </body>
 </html>
