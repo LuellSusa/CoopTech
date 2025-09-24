@@ -1,0 +1,92 @@
+[2025-09-12 02:28:54] === Update attempt start ===
+[2025-09-12 02:28:54] POST: Array
+(
+    [user_id] => 
+    [name] => admin
+    [address] => 
+    [contact] => 
+    [dob] => 
+    [email] => 
+)
+
+[2025-09-12 02:28:54] FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => WIN_20241202_18_31_24_Pro.jpg
+            [full_path] => WIN_20241202_18_31_24_Pro.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php6AB2.tmp
+            [error] => 0
+            [size] => 140678
+        )
+
+)
+
+[2025-09-12 02:28:54] CURRENT DB ROW: Array
+(
+    [user_id] => 9
+    [name] => admin
+    [email] => isaiahbriones021@gmail.com
+    [contact] => 09998711048
+    [profile_image] => pictures/user68c33879bd9d4.jpg
+    [password_hash] => $2y$10$78OEnb/9fvXPdONkF26/3OAEX1pI7FkT7kU6tPSoPP.kN5mxp1X7C
+    [created_at] => 2025-09-04 01:11:38
+    [verification_code] => 326136
+    [is_verified] => 1
+    [code_sent_at] => 2025-09-04 01:11:38
+    [status] => active
+    [address] => Tisa, Cebu City
+    [dob] => 2004-01-30
+)
+
+[2025-09-12 02:28:54] Profile image saved -> pictures/user_68c36946e61c0.jpg
+[2025-09-12 02:28:54] UPDATE executed. Params: ["admin","Tisa, Cebu City","09998711048","2004-01-30","isaiahbriones021@gmail.com","pictures\/user_68c36946e61c0.jpg",9]
+[2025-09-12 02:28:54] === Update attempt end ===
+
+[2025-09-12 03:54:50] === Update attempt start ===
+[2025-09-12 03:54:50] POST: Array
+(
+    [user_id] => 9
+    [name] => Briones
+    [address] => San fernando
+    [contact] => 111111
+    [dob] => 2004-01-30
+    [email] => isaiahbriones021@gmail.com
+)
+
+[2025-09-12 03:54:50] FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+
+[2025-09-12 03:54:50] CURRENT DB ROW: Array
+(
+    [user_id] => 9
+    [name] => admin
+    [email] => isaiahbriones021@gmail.com
+    [contact] => 09998711048
+    [profile_image] => pictures/user_68c36946e61c0.jpg
+    [password_hash] => $2y$10$78OEnb/9fvXPdONkF26/3OAEX1pI7FkT7kU6tPSoPP.kN5mxp1X7C
+    [created_at] => 2025-09-04 01:11:38
+    [verification_code] => 326136
+    [is_verified] => 1
+    [code_sent_at] => 2025-09-04 01:11:38
+    [status] => active
+    [address] => Tisa, Cebu City
+    [dob] => 2004-01-30
+)
+
+[2025-09-12 03:54:50] No new profile image uploaded or upload error code: 4
+[2025-09-12 03:54:50] UPDATE executed. Params: ["Briones","San fernando","111111","2004-01-30","isaiahbriones021@gmail.com","pictures\/user_68c36946e61c0.jpg",9]
+[2025-09-12 03:54:50] === Update attempt end ===
+

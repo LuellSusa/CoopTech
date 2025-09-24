@@ -1,0 +1,8 @@
+{
+    "name": "vitalcoders/app",
+    "description": "For OCR",
+    "minimum-stability": "stable",
+    "require": {
+        "thiagoalessio/tesseract_ocr": "^2.13"
+    }
+}
